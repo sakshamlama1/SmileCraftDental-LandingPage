@@ -1,9 +1,6 @@
 # Ignore node_modules anywhere (both backend and frontend)
 **/node_modules/
 
-# Ignore all .env files anywhere
-.env
-
 # Ignore React frontend build folder
 landing-page-app/build/
 

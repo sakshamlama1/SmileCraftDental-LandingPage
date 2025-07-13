@@ -1,0 +1,8 @@
+.hero {
+    display: flex;
+    min-height: calc(100vh - 100px);
+    padding-left: 5vw;
+    box-sizing: border-box;
+    background: linear-gradient(120deg, #F5FFFA, #ffffff);
+    align-items: center;
+}

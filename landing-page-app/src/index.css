@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  background-color: #F5F5F5;
+  scroll-behavior: smooth;
+}
+
+.navlink-r {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation link hover styles */
+.navlink-r:hover {
+  color: white;
+}
+
+#secondary {
+  border: 2px solid #5B9D7D;
+  background-color: #5B9D7D;
+  color: white;
+}
+
+#secondary:hover {
+  border: 2px solid #F1BF42;
+  background-color: #F1BF42;
+  color: black;
+}
+
+/* Remove the default link color and underline */
+a {
+  color: inherit;            /* Inherit the color from the parent element */
+  text-decoration: none;     /* Remove the underline */
 }
