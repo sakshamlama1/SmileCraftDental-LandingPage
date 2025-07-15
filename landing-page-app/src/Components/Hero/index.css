@@ -121,9 +121,21 @@
   height: auto;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
   object-fit: cover;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards 0.3s;
+  border: 1px solid linear-gradient(to right, #F9F9F9, #FFFFFF);
   display: block;
   margin: 0 auto;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Medium screens */
