@@ -14,24 +14,32 @@ const customMarkerIcon = L.divIcon({
 
 function Footer() {
     return (
-        <div className="footer-component">
-            <div className="footer-map">
-                <div className="footer-info">
-                    <h4>OUR LOCATION</h4>
-                    <h6>Address: 2/25 Manning St, Tuncurry NSW 2428</h6>
+        <footer className="footer-component">
+            <div className="footer-content">
+                <div className="footer-map">
+                    <div className="footer-info">
+                        <h4>Our Location</h4>
+                        <h6>2/25 Manning St, Tuncurry NSW 2428</h6>
+                    </div>
+                    <MapContainer 
+                        center={position} 
+                        zoom={30} 
+                        style={{ height: "175px", width: "100%", borderRadius: "10px" }}
+                        scrollWheelZoom={false}
+                        dragging={false}
+                        zoomControl={false}
+                        doubleClickZoom={false}
+                    >
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker position={position} icon={customMarkerIcon} />
+                    </MapContainer>
                 </div>
-                <MapContainer center={position} zoom={30} style={{ 
-                    height: "175px", width: "100%", borderRadius: "10px" 
-                }}>
-                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                    <Marker position={position} icon={customMarkerIcon} />
-                </MapContainer>
+                <div className="footer-contact">
+                    <p>This site is not endorsed by Facebook in any way. FACEBOOK is a trademark of Facebook, Inc.</p>
+                    <a href="/privacy-policy" className="footer-button">Privacy Policy</a>
+                </div>
             </div>
-            <div className="footer-contact">
-                <p>This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
-                <a href="/privacy-policy">Privacy Policy</a>
-            </div>
-        </div>
+        </footer>
     );
 }
 

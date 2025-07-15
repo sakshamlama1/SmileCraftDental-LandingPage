@@ -2,7 +2,8 @@ import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Hero from "../../Components/Hero";
 import Process from "../../Components/Process";
-import Reviews from "../../Components/Reviews";
+import Carousel from "../../Components/Carousel";
+import imageList from "../../utils/carouselImages.js";
 
 function LandingPage() {
   return (
@@ -12,7 +13,7 @@ function LandingPage() {
           <div className="landing-page-content">
               <Hero />           
               <Process />
-              <Reviews />    
+              <Carousel images={imageList} />    
           </div>
       </div>
       <Footer />

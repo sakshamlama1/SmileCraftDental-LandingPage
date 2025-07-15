@@ -1,118 +1,106 @@
+/* Footer Component */
 .footer-component {
     background-color: #5B9D7D;
-    display: flex;
-    justify-content: center; /* Centers footer content horizontally */
-    flex-direction: column;  /* Stack items vertically */
-    align-items: center;     /* Center all children horizontally */
+    color: #ffffff;
+    padding: 4rem 2rem;
     width: 100%;
-    position: relative;
-    padding: 3em 0;
-    color: white;
-    gap: 2em;
-    flex-wrap: wrap;
-}
-
-.footer-info {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-    color: white;
-    position: relative;  /* Ensures the border appears below */
-    display: inline-block;  /* Makes sure the border adjusts to content width */
-    border-bottom: 4px solid #F1BF42;  /* Yellow border */
-    padding-bottom: 0.5em; /* Adds space above the yellow border */
-}
-
-/* Adding a bottom border with custom width */
-.footer-info::after {
-    content: "";  /* Empty content for pseudo-element */
-    display: block;
-    width: 75%;  /* Makes the border span the full width of the h4 content */
-    height: 4px;  /* Border thickness */
-    background: linear-gradient(90deg, #6EAEE0, #5B9D7D); /* Blue-green gradient */
-    position: absolute;
-    bottom: -14px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    align-items: center;      /* Center text inside each content block */
-    text-align: center;       /* Center text */
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 3rem;
 }
 
+/* Footer Map Section */
 .footer-map {
-    min-width: 30%;
-    max-width: 30%;
-    border-radius: 10px;
-    padding-right: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;      /* Center map and text */
-    text-align: center;       /* Center headings */
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
 }
 
-.footer-map h4, .footer-map h6 {
-    margin: 0 auto;
-}
-
-.footer-map h4 {
+.footer-info h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
     font-weight: 700;
+    color: #ffffff;
+    border-bottom: 4px solid #F1BF42;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
 }
 
-.footer-map h6 {
-    font-size: 16px;
-    font-weight: 600;
+.footer-info h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #f1f1f1;
 }
 
+/* Map container already styled inline for border radius, height and width */
+
+/* Contact & Legal Section */
 .footer-contact {
-    text-align: center;         
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
 }
 
 .footer-contact p {
-    margin-bottom: 1.5em;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: #f5f5f5;
 }
 
-.footer-contact a {
-    background-color: #2D9CDB; 
+.footer-button {
+    background-color: #2D9CDB;
     text-decoration: none;
-    color: white;
-    border: none;
-    padding: 0.75em 1.5em;
-    border-radius: 25px;       
+    color: #ffffff;
+    padding: 0.75rem 1.75rem;
     font-size: 1rem;
+    border-radius: 50px;
     font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: inline-block;
 }
 
-.footer-contact a:hover {
-    background-color: #F1BF42;  
-    color: black;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+.footer-button:hover {
+    background-color: #F1BF42;
+    color: #222;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
+/* Responsive Design */
+@media (min-width: 768px) {
     .footer-content {
-        align-items: center;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
-    .footer-map {
-        max-width: 50%;
-        min-width: 50%;
-        padding-right: 1rem;
+    .footer-map,
+    .footer-contact {
+        text-align: left;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .footer-map {
-        max-width: 90%;
-        min-width: 90%;
-        padding: 1em 0;
+        max-width: 100%;
+    }
+
+    .footer-info h4 {
+        font-size: 1.2rem;
+    }
+
+    .footer-info h6 {
+        font-size: 0.95rem;
     }
 }

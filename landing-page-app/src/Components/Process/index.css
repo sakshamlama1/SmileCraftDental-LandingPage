@@ -1,42 +1,48 @@
-/* process Instructions Component */
+/* Process Instructions Component */
 .process-instructions {
     background-color: #FFF9E6;
-    margin-top: 5vh;
+    padding: 4rem 2rem;
     text-align: center;
-    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .process-instructions h2 {
-    font-size: 1.8rem;
-    color: #5B9D7D;
-    margin-bottom: 2rem;
-    border-left: 4px solid #2D9CDB;
+    font-size: 2rem;
+    color: #2D9CDB;
+    margin-bottom: 3rem;
     padding-left: 1rem;
-    font-weight: 700;
-    text-align: left;
-    max-width: 1200px;
-    margin-inline: auto;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .process-instructions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-    align-items: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 3rem;
     max-width: 1200px;
-    margin-inline: auto;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+    align-items: start;
 }
 
 .process-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
 .process-instruction-logo {
-    width: 200px;
+    width: 100px;
     height: auto;
     margin-bottom: 1rem;
     filter: grayscale(0.1);
@@ -44,12 +50,51 @@
 }
 
 .process-instruction-logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .process-step p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.process-step p strong {
+    color: #5B9D7D;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    display: flex;
+    width: 65vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1BF42;
+    color: #000;
+    font-weight: 700;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
     font-size: 1.2rem;
-    line-height: 1.5;
-    color: #333;
-    max-width: 240px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #238EC2;
+    color: white;
+    transform: translateY(-2px);
 }
