@@ -88,29 +88,6 @@
   margin: 0;
 }
 
-.countdown-timer {
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-  margin-top: 0; /* removed margin so it hugs the image */
-}
-
-.timer-box {
-  text-align: center;
-}
-
-.timer-box .count {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #5B9D7D;
-}
-
-.timer-box .label {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  color: #333;
-}
-
 .hero-image {
   max-width: 100%;
   margin: 0; /* remove extra margin */
@@ -160,11 +137,6 @@
     .hero-button {
         font-size: 1.1rem;
     }
-
-    .countdown-timer {
-        flex-wrap: wrap;
-    }
-
 }
 
 /* Small screens - stack content */
@@ -199,12 +171,6 @@
     max-width: 100%;
     margin: 0;
   }
-
-  .countdown-timer {
-    flex-wrap: wrap;
-    margin-top: var(--space-sm);
-    justify-content: center;
-  }
 }
 
 /* Extra small screens */
@@ -224,13 +190,5 @@
 
   .limited-offer {
     font-size: 0.95rem;
-  }
-
-  .timer-box .count {
-    font-size: 1.5rem;
-  }
-
-  .timer-box .label {
-    font-size: 0.7rem;
   }
 }

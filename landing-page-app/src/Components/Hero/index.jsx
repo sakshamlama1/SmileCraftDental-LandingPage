@@ -25,11 +25,6 @@ function Hero() {
                 Yes! I Want This Offer
             </button>            
             <p className="limited-offer">***LIMITED to the <u>First 15 People</u> Who Schedule***</p>
-            <div className="countdown-timer">
-              <div className="timer-box"><div className="count" id="hours">23</div><div className="label">hours</div></div>
-              <div className="timer-box"><div className="count" id="minutes">36</div><div className="label">minutes</div></div>
-              <div className="timer-box"><div className="count" id="seconds">56</div><div className="label">seconds</div></div>
-            </div>
           </div>
 
           <div className="hero-image-wrapper">
