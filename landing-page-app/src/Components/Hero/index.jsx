@@ -16,9 +16,9 @@ function Hero() {
               <strong>Claim Your $75 Porcelain Veneer Consultation (Valued at $375)!</strong>
             </p>
             <ul className="hero-list">
-              <li>18 Months interest-free payment plan options</li>
-              <li>$2,500 OFF 8 veneers — was $14,000, now $11,500</li>
-              <li>$1,000 OFF 4 veneers — was $7,000, now $6,000</li>
+              <li>24 Months interest-free available</li>
+              <li>Hybrid Veneers OFF 6 veneers for $6300</li>
+              <li>Porcelain Veneers OFF 6 veneers for $9261</li>
             </ul>
 
             <button className="hero-button" onClick={() => setIsModalOpen(true)}>

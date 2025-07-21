@@ -10,10 +10,16 @@ import patient9 from "../assets/patient-images/patient9.png";
 import patient10 from "../assets/patient-images/patient10.png";
 import patient11 from "../assets/patient-images/patient11.png";
 import patient12 from "../assets/patient-images/patient12.png";
+import patient13 from "../assets/patient-images/patient13.png";
+import patient14 from "../assets/patient-images/patient14.png";
+import patient15 from "../assets/patient-images/patient15.png";
+import patient16 from "../assets/patient-images/patient16.png";
+import patient17 from "../assets/patient-images/patient17.png";
+import patient18 from "../assets/patient-images/patient18.png";
 
 const imageList = [
   patient1, patient2, patient3, patient4, patient5, patient6, patient7, patient8, patient9, patient10,
-  patient11, patient12
+  patient11, patient12, patient13, patient14, patient15, patient16, patient17, patient18
 ];
 
 export default imageList;
