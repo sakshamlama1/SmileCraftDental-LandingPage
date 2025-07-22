@@ -17,8 +17,8 @@ function Hero() {
             </p>
             <ul className="hero-list">
               <li>24 Months interest-free available</li>
-              <li>Hybrid Veneers OFF 6 veneers for $6300</li>
-              <li>Porcelain Veneers OFF 6 veneers for $9261</li>
+              <li>6 Hybrid Veneers for $6,300</li>
+              <li>$1,221 off 6 Porcelain Veneers — was $9,621, now $8,400</li>
             </ul>
 
             <button className="hero-button" onClick={() => setIsModalOpen(true)}>
