@@ -40,44 +40,49 @@ const ConsultationFormModal = ({ onClose }) => {
       <div className="modal-box">
         <button className="modal-close" onClick={onClose}>×</button>
         <h2 className="modal-title">Enter Your Details To Claim Your Porcelain Veneers Consultation Offer</h2>
-        <form 
-          className="modal-form" 
-          action="https://formsubmit.co/sakshamlama1@gmail.com"  // your email here
-          method="POST"
-          ref={formRef}
-          onSubmit={handleSubmit}
-        >
-          {/* optional to disable captcha */}
-          <input type="hidden" name="_captcha" value="false" />
+        <div className="modal-content">
+          <form 
+            className="modal-form" 
+            action="https://formsubmit.co/manager@smilecraftdental.com"
+            method="POST"
+            ref={formRef}
+            onSubmit={handleSubmit}
+          >
+            {/* optional to disable captcha */}
+            <input type="hidden" name="_captcha" value="false" />
 
-          <label>
-            Full Name *
-            <input type="text" name="name" placeholder="Your Full Name" />
-            {errors.name && <span className="error-text">{errors.name}</span>}
-          </label>
+            <label>
+              Full Name *
+              <input type="text" name="name" placeholder="Your Full Name" />
+              {errors.name && <span className="error-text">{errors.name}</span>}
+            </label>
 
-          <label>
-            Email *
-            <input type="email" name="email" placeholder="Your Email" />
-            {errors.email && <span className="error-text">{errors.email}</span>}
-          </label>
+            <label>
+              Email *
+              <input type="email" name="email" placeholder="Your Email" />
+              {errors.email && <span className="error-text">{errors.email}</span>}
+            </label>
 
-          <label>
-            Cell Phone Number *
-            <input type="tel" name="phone" placeholder="Your Cell Phone" />
-            {errors.phone && <span className="error-text">{errors.phone}</span>}
-          </label>
+            <label>
+              Mobile Number *
+              <input type="tel" name="phone" placeholder="Your Mobile Number" />
+              {errors.phone && <span className="error-text">{errors.phone}</span>}
+            </label>
 
-          <label className="modal-checkbox">
-            <input type="checkbox" name="agree" />
-            {errors.agree && <span className="error-text">{errors.agree}</span>}
-            <span>
-              As requested, we’ll give you a call in the next 24–48 hours to discuss Porcelain Veneer treatment and the special offer we have this week. This is a no-obligation call — you will be given all the information and if you’d like to book a consultation you’ll be offered a $75 appointment (valued at $375) with our dentist.
-            </span>
-          </label>
+            <label className="modal-checkbox">
+              <input type="checkbox" name="agree" />
+              {errors.agree && <span className="error-text">{errors.agree}</span>}
+              <span>
+                As requested, we will give you a call in the next 48 hours to discuss the Porcelain 
+                Veneer treatment. This is a no-obligation call where you will be given all the information 
+                and if you would like to, you can book a $75 consultation with one of our experienced dentist 
+                (valued at $375).
+              </span>
+            </label>
 
-          <button type="submit" className="hero-button">Submit</button>
-        </form>
+            <button type="submit" className="hero-button">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   );

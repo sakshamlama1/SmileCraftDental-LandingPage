@@ -6,11 +6,13 @@ import {
   LandingPage,
   PrivacyPolicy,
 } from './Screens';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

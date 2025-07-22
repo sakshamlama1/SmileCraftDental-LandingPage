@@ -16,7 +16,7 @@ function Process() {
                     <div className="process-instructions-grid">
                         <div className="process-step">
                             <img src={ConsultationImage} alt="Consultation" className="process-instruction-logo" />
-                            <p><strong>Book Your Consultation</strong><br />Schedule your visit at your nearest Smilecraft Dental practice and discuss your dental needs.</p>
+                            <p><strong>Book Your Consultation</strong><br />Schedule your visit at Smile Craft Dental Tuncurry and discuss your dental needs.</p>
                         </div>
                         <div className="process-step">
                             <img src={TreatmentImage} alt="Treatment" className="process-instruction-logo" />
