@@ -1,4 +1,4 @@
-# SmileCraftDental Veneers Landing Page
+# SmileCraftDental-LandingPage
 
 A high-conversion promotional landing page for Smile Craft Dental’s veneers campaign, built with React and Bootstrap.
 
